@@ -18,10 +18,8 @@ In this final project, you will create a static website (a static website, is in
 - Link to the main page of your website
 - A final zip of your website must be submitted, you can continue making changes to your
 - project but what you deliver as your final zip is what will be graded
-- An API Documentation of your endpoints, the lambda functions they call, and what they
-- do. Sample JSON inputs and outputs should also be provided.
-- Final Presentation: this will be a 3-5 minute presentation, where you show off your
-- website.
+- An API Documentation of your endpoints, the lambda functions they call, and what they do. Sample JSON inputs and outputs should also be provided.
+- Final Presentation: this will be a 3-5 minute presentation, where you show off your website.
 
 ## Some Ideas
 
