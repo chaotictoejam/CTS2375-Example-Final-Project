@@ -152,7 +152,7 @@ p {
 
 .learn-more .column {
 	float: left;
-	width: 33%;
+	width: 50%;
 }
 
 /* Learn more image*/
@@ -165,10 +165,29 @@ p {
 	height: 60%;
 }
 
+.container{
+	position: relative;
+}
+.container .text{
+	color: white;
+	position: absolute;
+	z-index: 999;
+	margin: 0 auto;
+	left: 0;
+	right: 0;   
+	text-align: center;
+	top: 60%;
+	width: 60%;
+}
+
 /* Learn more hover*/
 .learn-more .column:hover .image {
     /* Background styles */
 	opacity: 0.3;
+}
+/* Learn more hover*/
+.learn-more .column:hover .text {
+	color: black;
 }
 
 .footer {

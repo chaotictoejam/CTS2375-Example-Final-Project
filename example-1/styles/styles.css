@@ -1,37 +1,54 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Style the body */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+	margin: 0;
+	/* Font */
+    font-family: sans-serif;
+	font-family: 'Cute Font', cursive;
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* Header/logo Title */
 .header {
-  padding: 50px;
-  text-align: center;
-  background:url("images/catbackground.jpg");
-  color: #99ccff;
+	padding: 50px;
+	text-align: center;
+	background:url("../images/galaxy-background.jpg");
+	color: #99ccff;
 
-  height: 100%;
-
-  /* Parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+	
+	/* Parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-/* Increase the font size of the heading */
-.caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
+/* Header Title */
+.header .title{
+	padding: 20px;
+	text-align: center;
+	background-color: white;
+	color: #99ccff;
+	  
+	width: 50%;
+	opacity: .8;
+	
+    /* Border styles */
+    border-radius: 20px;
 }
 
 /* Increase the font size of the heading */
@@ -65,25 +82,14 @@ body {
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: #ddd;
+  background-color: #99ccff;
   color: black;
 }
 
-/* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  background-color: #f1f1f1;
-  padding: 20px;
+/* Change color on hover */
+.active {
+  background-color: #9966ff;
+  color: black;
 }
 
 /* Main column */
@@ -94,24 +100,32 @@ body {
   padding: 20px;
 }
 
-/* About image*/
-.aboutimg {
-  margin: auto;
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-  border-radius: 10%;
-  background:url("images/chell.jpg") 50% 50% no-repeat;
-  width: 250px;
-  height: 250px;
+.footer {
+	text-align: center;
+	background: black;
+	color: rgb(147, 112, 219);
+	
+    /* Padding */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    overflow: hidden; /* make sure this doesn't cause unexpected behaviour */
 }
 
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: black;
-  color: #99ccff;
+.footer .outer {
+    width: 60%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.footer .column-note {
+	float: left;
+	width: 20%
+}
+
+.footer .column {
+	float: left;
+	width: 80%
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
