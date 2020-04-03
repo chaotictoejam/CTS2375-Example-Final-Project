@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+	
+	/* Font */
+    font-family: sans-serif;
+	font-family: 'Cute Font', cursive;
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    
+    /* Background styles */
+    background-image: url("../images/catbackground.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero h2 {
+    /* Text styles */
+    font-size: 2em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+	opacity: 1;
+}
+
+.hero .btn {
+	/* Font */
+	font-family: 'Montserrat', sans-serif;
+	
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    /* Border styles */
+    border: 2px solid black;
+    border-radius: 20px;
+	
+    /* Background styles */
+    background-color: rgba(147, 112, 219, 0.5);
+}
+
+.hero .btn:hover {
+    /* Background styles */
+    background-color: rgba(153, 204, 255, 0.5);
+}
+
+.section {
+	background-color: black;
+	
+    /* Text styles */
+    text-align: center;
+	color: rgb(147, 112, 219);
+	
+    /* Padding */
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.section h2 {
+    /* Text styles */
+    font-size: 2em;
+}
+
+.about {
+    background-color: rgb(153, 204, 255);
+	text-align: center;
+	
+    /* Padding */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    overflow: hidden; /* make sure this doesn't cause unexpected behaviour */
+}
+
+.about .outer {
+    width: 60%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+/* About image*/
+.about img {
+	margin: auto;
+	width: 100%;
+	padding: 20px;
+	border-radius: 50%;
+	width: 50%;
+	height: 50%;
+}
+
+/* Create two equal columns that floats next to each other */
+.about .column {
+	float: left;
+	width: 50%;
+}
+
+.learn-more {
+    background-color: rgb(153, 204, 255);
+	text-align: center;
+	
+    /* Padding */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    overflow: hidden; /* make sure this doesn't cause unexpected behaviour */
+}
+
+.learn-more .outer {
+    width: 60%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.learn-more .column {
+	float: left;
+	width: 33%;
+}
+
+/* Learn more image*/
+.learn-more .image {
+	margin: auto;
+	width: 100%;
+	padding: 20px;
+	border-radius: 50%;
+	width: 60%;
+	height: 60%;
+}
+
+/* Learn more hover*/
+.learn-more .column:hover .image {
+    /* Background styles */
+	opacity: 0.3;
+}
+
+.footer {
+	text-align: center;
+	background: black;
+	color: rgb(147, 112, 219);
+	
+    /* Padding */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    overflow: hidden; /* make sure this doesn't cause unexpected behaviour */
+}
+
+.footer .outer {
+    width: 60%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.footer .column-note {
+	float: left;
+	width: 20%
+}
+
+.footer .column {
+	float: left;
+	width: 80%
+}
+
+/* Mobile styling */
+@media only screen and (max-width: 629px) {
+	/* for widths less than or equal to 629 pixels */
+	.about .outer {
+		width: 60%;
+		margin: 0 auto;
+		display: block;
+	}
+	.about .column {
+		float: none;
+		width: 100%;
+	}
+	.learn-more .outer {
+		width: 60%;
+		margin: 0 auto;
+		display: block;
+	}
+	.learn-more .column {
+		float: none;
+		width: 100%;
+	}
+	.footer .outer {
+		width: 60%;
+		margin: 0 auto;
+		display: block;
+	}
+	.footer .column-note {
+		float: none;
+		width: 100%;
+	}
+	.footer .column {
+		float: none;
+		width: 100%;
+	}
+}
