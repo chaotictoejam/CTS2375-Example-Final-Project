@@ -83,6 +83,11 @@ p {
     background-color: rgba(153, 204, 255, 0.5);
 }
 
+.hero .btn:disabled {
+    /* Background styles */
+    background-color: rgba(111, 111, 111, 0.5);
+}
+
 .section {
 	background-color: black;
 	
