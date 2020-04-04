@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Cats!</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cats!</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Reference styles --> 
-<link rel="stylesheet" href="styles/main.css">
+	<!-- Reference styles --> 
+	<link rel="stylesheet" href="styles/main.css">
 
-<!-- Load Google fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+	<!-- Load Google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+
+	<script>
+		async function getAgreeCount() {
+			fetch( 'PROD API URL HERE',  {
+				method: 'GET'
+			})
+			.then(response => response.json())
+			.then((response) => {
+				console.log(response);
+				document.getElementById("count").innerHTML = response.body;
+			});
+		}
+		async function agree() {
+			fetch( 'PROD API URL HERE',  {
+				method: 'POST'
+			})
+			.then(response => response.json())
+			.then((response) => {
+				console.log(response);
+				getAgreeCount();
+			});
+		}
+		window.onload = getAgreeCount();
+    </script>   
 </head>
 <body>
 	<div class="hero">
 		<div class="hero-inner">
 			<h1>Cats Are Awesome!</h1>
-			<h2># of people agree</h2>
-			<button class="btn">I agree</button>
+			<h2><span id="count"></span> of people agree</h2>
+			<button class="btn" onclick="agree()">I agree</button>
 		</div>
 	</div>
     <div class="section">
