@@ -92,12 +92,74 @@ p {
   color: black;
 }
 
-/* Main column */
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
+.section {
+	background-color: black;
+	
+    /* Text styles */
+    text-align: center;
+	color: rgb(147, 112, 219);
+	
+    /* Padding */
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.section h2 {
+    /* Text styles */
+    font-size: 2em;
+}
+
+.fact {
+    background-color: rgb(153, 204, 255);
+	text-align: center;
+	
+    /* Padding */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    overflow: hidden; /* make sure this doesn't cause unexpected behaviour */
+}
+
+/* Fact image*/
+.fact img {
+	margin: auto;
+	width: 100%;
+	padding: 20px;
+	max-width:500px;
+	max-height:500px;
+	width: auto;
+	height: auto;
+}
+
+.fact .btn {
+	/* Font */
+	font-family: 'Montserrat', sans-serif;
+	
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    
+    /* Border styles */
+    border: 2px solid black;
+    border-radius: 20px;
+	
+    /* Background styles */
+    background-color: rgba(147, 112, 219, 0.5);
+}
+
+.fact .btn:hover {
+    /* Background styles */
+    background-color: rgba(153, 204, 255, 0.5);
 }
 
 .footer {
