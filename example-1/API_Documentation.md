@@ -49,4 +49,50 @@ This POST call requires no body.
 
 ### Cat Facts
 
+#### GET
+
+This retrieves the a random fact about cats and an image. This calls AWS Gateway API which then calls the lambda function GetCatFact. The lambda function choses a random fact from a list of facts.
+
+**Sample Call**
+
+This is a simple GET call, and requires no body.
+
+**Sample Response**
+
+```json
+{
+    "statusCode": 200, 
+    "headers": {
+        "Access-Control-Allow-Orgin": "*"
+    }, 
+    "body": {
+        "fact": "Cats can make themselves compact.", 
+        "image": "images/chell_ball.jpg"
+    }
+}
+```
+
 ### Dog Facts
+
+#### GET
+
+This retrieves a random fact about dogs and an image. This calls AWS Gateway API which then calls the lambda function GetDogFact. The lambda function choses a random fact from a list of facts.
+
+**Sample Call**
+
+This is a simple GET call, and requires no body.
+
+**Sample Response**
+
+```json
+{
+    "statusCode": 200, 
+    "headers": {
+        "Access-Control-Allow-Orgin": "*"
+    }, 
+    "body": {
+        "fact": "Dogs destroy there toys", 
+        "image": "images/leela_toys.jpg"
+    }
+}
+```
